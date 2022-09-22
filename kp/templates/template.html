@@ -1,0 +1,35 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <form name="passdata1" action="/getdata1" method="post" style="padding-top:80px;">
+            <center>
+            <div>
+                <span>Data using yfiance Package</span> <br><br>
+                <span>Enter Company Code :   </span>
+                <input type="text" name="yfin"> <br><br>
+                <input type="submit" name="Submit" id="submityfin">
+            </div>
+        </center>
+        </form>
+        <div style="width:100%; height:50px;"></div>
+        <form name="passdata2" action="/getdata2" method="post">
+            <center>
+            <div>
+                <span>Data using CSV</span>
+                <p style="font-size:13px;">Note: CSV file used here is of the year 2018. So, some companies might be missing.</p>
+                <span>Enter Company Code :   </span>
+                <input type="text" name="csv"> <br><br>
+                <input type="submit" name="Submit" id="submitcsv">
+            </div>
+            </center>
+        </form>
+        <div style="padding:50px;">
+            <center><span>Result</span> <br>
+            <textarea readonly rows="10" cols="80" style="text-align:center; resize: none; border: solid #000;">
+                {{res}}
+            </textarea></center>
+            </div>
+    </body>
+</html>
